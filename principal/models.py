@@ -12,7 +12,7 @@ class Usuario(User):
     profile=models.FileField(upload_to='profile/'+random)
     
     def __unicode__(self):
-        return self.username
+        return self.email
     
 class Categoria(models.Model):
     nombre=models.CharField(max_length=50)
