@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="Ropa, Comparacion" />
+<meta name="description" content="Web comparativa de ropa" />
+<title>MiraTuRopa.es</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/modern-business.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/effect1.css" />
+<script src="js/modernizr.custom.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+<script src="js/classie.js"></script>
+<script src="js/pathLoader.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<div id="ip-container" class="ip-container">
+	<!-- initial header -->
+	<header class="ip-header">
+		<h1 class="ip-logo"><img class="ip-inner"   src="images/logo.png"/></h1>
+		{% block movimiento %}{% endblock %}
+	</header>
+
+	<div class="ip-main">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                    
+                    </li>
+                    <li>
+                        <a href="">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block contenido %}{% endblock %}
+    </div>
+    </div>
+    </body>
+    </html>
